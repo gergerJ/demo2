@@ -1,4 +1,4 @@
-package controller;
+package com.example.demo.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -16,7 +16,7 @@ public class DemoController {
     //@RequestMapping(value = "/demo" , method = RequestMethod.GET)
     @GetMapping(value = "/demo")
     public ModelAndView demo(ModelAndView mv, String id){
-        log.info("?????????????????????1234");
+        log.info("?????????????????????테스트3");
 
         String name = "";
         if(id.equals("liu")){
