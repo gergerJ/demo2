@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -16,7 +16,7 @@ public class DemoController {
     //@RequestMapping(value = "/demo" , method = RequestMethod.GET)
     @GetMapping(value = "/demo")
     public ModelAndView demo(ModelAndView mv, String id){
-        log.info("?????????????????????1234555");
+        log.info("?????????????????????1234");
 
         String name = "";
         if(id.equals("liu")){
@@ -32,7 +32,7 @@ public class DemoController {
         aaa +="조한영,";
         aaa +="허희진]";
 
-        new StringBuffer().append("[")  // 각 메소드별 synchronized keyword 가 존재하고 멀티 스레드 상태에서 동기화를 지원
+        new StringBuffer().append("[")
                 .append("김연우")
                 .append(",")
                 .append("이재성")
@@ -42,7 +42,7 @@ public class DemoController {
                 .append("허희진")
                 .append("]");
 
-        new StringBuilder() // 단일 Thread 환경에서만 사용하도록 설계!!-> 속도는 Buffer보다 빠르지만, 언제 멀티가 필요할지 모름!
+        new StringBuilder()
                 .append("[")
                 .append("김연우,")
                 .append("이재성,")
